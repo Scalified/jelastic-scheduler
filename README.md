@@ -37,4 +37,4 @@ This image extends [scalified/alpine-cron](https://store.docker.com/community/im
 
 * [Scalified](http://www.scalified.com)
 * [Scalified Official Facebook Page](https://www.facebook.com/scalified)
-* [Scalified Support](mailto:info@scalified.com?subject=[Jelastic Scheduler]: Proposals And Suggestions)
+* Scalified Support - info@scalified.com
