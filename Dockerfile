@@ -7,9 +7,13 @@ ENV JELASTIC_CONFIG_DIR /root/.config/jelastic
 ENV JELASTIC_CLI_URL ftp://ftp.jelastic.com/pub/cli/jelastic-cli-installer.sh
 ENV ROOT_CRONTABS_FILE $CRONTABS_DIR/root
 ENV CRON_LOG_DIR /var/log/crond
-ENV JELASTIC_LOGIN your-login
-ENV JELASTIC_PASSWORD your-password
-ENV ENVIRONMENTS "app-dev squash-tm app-test oracle-database selenium-chrome teamcity"
+
+ARG JELASTIC_LOGIN
+ARG JELASTIC_PASSWORD
+ARG ENVIRONMENTS
+ENV JELASTIC_LOGIN ${JELASTIC_LOGIN}
+ENV JELASTIC_PASSWORD ${JELASTIC_LOGIN}
+ENV ENVIRONMENTS ${ENVIRONMENTS}
 
 RUN apk add --update --no-cache curl \
 	openjdk8
